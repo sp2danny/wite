@@ -12,6 +12,7 @@ struct AdornedChar
 {
 	char ch;
 	bool bold;
+	bool mark;
 	ColCode col;
 };
 
@@ -30,6 +31,7 @@ struct Buffer
 	bool has_mark;
 	bool block_mark;
 	Pos mark_in, mark_out;
+	void performAdorn();
 };
 
 
